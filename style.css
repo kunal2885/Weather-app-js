@@ -1,0 +1,126 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 90%;
+    max-width: 420px;
+    background: linear-gradient(160deg, #6dd5fa, #2980b9);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #555;
+    margin-right: 15px;
+}
+
+.search button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 18px;
+}
+
+/* Weather Section */
+.weather-icon {
+    width: 150px;
+    margin: 20px 0 10px;
+}
+
+.temp {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.city {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+/* Details */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.details p:last-child {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .temp {
+        font-size: 50px;
+    }
+
+    .city {
+        font-size: 24px;
+    }
+}
